@@ -1,0 +1,45 @@
+
+ ___           _                   _   _                 
+|_ _|_ __  ___| |_ _ __ _   _  ___| |_(_) ___  _ __  ___ 
+ | || '_ \/ __| __| '__| | | |/ __| __| |/ _ \| '_ \/ __|
+ | || | | \__ \ |_| |  | |_| | (__| |_| | (_) | | | \__ \
+|___|_| |_|___/\__|_|   \__,_|\___|\__|_|\___/|_| |_|___/
+                                                         
+
+Dataset:
+	-Dataset contains 3 columns of (R,G,B)
+	-The programme fills out the (R,G,B) values randomly, 
+	a algorithm will automatically label a either black is best or white is best over that randomly genrated color
+
+Learning Method:
+	-It uses super vised learning.
+	-NeuralNetwrok learns by applying `BackPropagation algorithm`.
+
+Requirments:
+	-You should have a linux terminal which supports color formating,
+	because programme display the text with colors using randomly genrated (R,G,B)
+
+Testing:
+	
+	1) Training 
+	-Compile:
+		g++ train-nn-test.cpp 
+	-Run
+		./a.out
+	-`weights.txt` trained weights will be saved automatically after it
+
+	2) Testing
+	-Compile
+		g++ nn-load-test.cpp
+	-Run
+		./a.out
+	- `weights.txt` contains matrices weights which are trained previously
+	- those were automatically used for prediction
+	
+ _____ _                 _   __   __          
+|_   _| |__   __ _ _ __ | | _\ \ / /__  _   _ 
+  | | | '_ \ / _` | '_ \| |/ /\ V / _ \| | | |
+  | | | | | | (_| | | | |   <  | | (_) | |_| |
+  |_| |_| |_|\__,_|_| |_|_|\_\ |_|\___/ \__,_|
+                                              
+
